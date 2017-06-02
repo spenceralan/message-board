@@ -3,5 +3,5 @@
 <h2>Previous Questions:</h2>
 
 {{#each model.questions as |question|}}
-<h4>{{question.content}}</h4>
+  <h4>{{#link-to 'question-page' question.id}}{{question.content}}{{/link-to}}</h4>
 {{/each}}
