@@ -1,1 +1,7 @@
-<h1>Ask An Expert!</h1>
+<h1>{{#link-to 'new-question'}}Ask An Expert!{{/link-to}}</h1>
+
+<h2>Previous Questions:</h2>
+
+{{#each model.questions as |question|}}
+<h4>{{question.content}}</h4>
+{{/each}}
