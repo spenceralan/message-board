@@ -2,24 +2,24 @@
 <div>
   <form>
     <div class="form-group">
-      <label for="content">content</label>
-      {{input value=content id="content"}}
+      <label for="content">Question</label>
+      {{input value=content id="content" class="form-control"}}
     </div>
 
     <div class="form-group">
-      <label for="notes">notes</label>
-      {{input value=notes id="notes"}}
+      <label for="notes">Notes</label>
+      {{textarea rows=3 value=notes id="notes" class="form-control"}}
     </div>
     
     <div class="form-group">
-      <label for="username">username</label>
-      {{input value=username id="username"}}
+      <label for="username">Username</label>
+      {{input value=username id="username" class="form-control"}}
     </div>
 
     <div class="form-group">
-      <label for="date">date</label>
-      {{input value=date id="date"}}
+      <label for="date">Date</label>
+      {{input value=date id="date" class="form-control"}}
     </div>
-    <button {{action 'saveQuestion'}}>Save</button>
+    <button class="btn btn-default" {{action 'saveQuestion'}}>Save</button>
   </form>
 </div>
