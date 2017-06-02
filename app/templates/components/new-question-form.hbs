@@ -1,1 +1,25 @@
-{{yield}}
+<h1>New Question</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="content">content</label>
+      {{input value=content id="content"}}
+    </div>
+
+    <div class="form-group">
+      <label for="notes">notes</label>
+      {{input value=notes id="notes"}}
+    </div>
+    
+    <div class="form-group">
+      <label for="username">username</label>
+      {{input value=username id="username"}}
+    </div>
+
+    <div class="form-group">
+      <label for="date">date</label>
+      {{input value=date id="date"}}
+    </div>
+    <button {{action 'saveQuestion'}}>Save</button>
+  </form>
+</div>
