@@ -1,8 +1,14 @@
-<h1>{{model.content}}</h1>
+<h2>Question:</h2>
+<h3>{{model.content}}</h3>
+<label>Date:</label>
+<p>{{model.date}}</p>
+<label>Additional Info:</label>
+<p>{{model.notes}}</p>
 
 <h2>Answers:</h2>
 {{#each model.answers as |answer|}}
-  <p>{{answer.content}}</p>
+  <h3>{{answer.content}}</h3>
+  <p>{{answer.username}}, {{answer.date}}</p>
 {{/each}}
 
 {{new-answer-form saveAnswer="saveAnswer" question=model}}
