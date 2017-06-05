@@ -1,25 +1,26 @@
-<h1>New Question</h1>
+<h1>Edit Question</h1>
 <div>
   <form>
     <div class="form-group">
       <label for="content">Question</label>
-      {{input required value=content id="content" class="form-control"}}
+      {{input required value=content placeholder=question.content id="content" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="notes">Notes</label>
-      {{textarea required rows=3 value=notes id="notes" class="form-control"}}
+      {{textarea required rows=3 value=notes placeholder=question.notes id="notes" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="username">Username</label>
-      {{input required value=username id="username" class="form-control"}}
+      {{input required value=username placeholder=question.username id="username" class="form-control"}}
     </div>
 
     <div class="form-group">
       <label for="date">Date</label>
       {{input type="date" value=date id="date" class="form-control"}}
     </div>
-    <button class="btn btn-default" {{action 'saveQuestion'}}>Save</button>
+
+    <button class="btn btn-default" {{action 'updateQuestion' question}}>Save</button>
   </form>
 </div>

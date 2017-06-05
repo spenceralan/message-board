@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         username: this.get("username") ? this.get("username") : "",
         date: this.get("date") ? this.get("date") : "",
       }
-      this.sendAction('saveQuestion', params)
+      this.sendAction('saveQuestion', params);
     }
   }
 });
